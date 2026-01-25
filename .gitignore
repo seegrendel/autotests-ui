@@ -1,3 +1,5 @@
 .env
 .idea/
 browser-state.json
+__pycache__/
+tests/__pycache__/
