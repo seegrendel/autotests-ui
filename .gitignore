@@ -3,3 +3,4 @@
 browser-state.json
 __pycache__/
 tests/__pycache__/
+fixtures/__pycache__/
