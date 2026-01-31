@@ -33,7 +33,7 @@ class ImageUploadWidgetComponent(BaseComponent):
         self.remove_button = Button(page, f'{identifier}-image-upload-widget-remove-button', 'Remove button')
         self.upload_input = FileInput(page, f'{identifier}-image-upload-widget-input', 'Upload input')
 
-    def check_visible(self, is_image_uploaded: bool = False):
+    def check_visible(self, is_image_uploaded: bool = False) -> None:
         self.image_upload_info_icon.check_visible()
 
         self.image_upload_info_title.check_visible()
@@ -56,8 +56,8 @@ class ImageUploadWidgetComponent(BaseComponent):
                 description='Preview of selected image will be displayed here'
             )
 
-    def click_remove_image_button(self):
+    def click_remove_image_button(self) -> None:
         self.remove_button.click()
 
-    def upload_preview_image(self, file: str):
+    def upload_preview_image(self, file: str) -> None:
         self.upload_input.set_input_files(file)
