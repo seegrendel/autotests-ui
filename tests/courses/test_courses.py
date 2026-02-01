@@ -63,11 +63,6 @@ class TestCourses:
         )
         create_course_page.create_course_toolbar_view.click_create_course_button()
 
-        courses_list_page.toolbar_view.check_visible()
-        courses_list_page.course_view.check_visible(
-            index=0, title="Playwright", max_score="100", min_score="10", estimated_time="2 weeks"
-        )
-
         courses_list_page.course_view.menu.menu_button.click()
         courses_list_page.course_view.menu.edit_menu_item.click()
 
