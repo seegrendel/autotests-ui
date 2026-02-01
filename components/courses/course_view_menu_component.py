@@ -18,7 +18,7 @@ class CourseViewMenuComponent(BaseComponent):
         self.edit_menu_item.check_visible(nth=index)
         self.edit_menu_item.click(nth=index)
 
-    def click_delete(self, index: int)-> None:
+    def click_delete(self, index: int) -> None:
         self.menu_button.click(nth=index)
 
         self.delete_menu_item.check_visible(nth=index)
